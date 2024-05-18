@@ -45,43 +45,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav a {
-    margin: 5px 5px 5px 5px;
-
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
-}
-
 .maiim {
   display: flex;
   justify-content: center;
@@ -95,29 +58,6 @@ section {
   border-radius: 20px;
   padding: 20px;
   margin: 30px;
-}
-
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  section {
-    width: 800px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section {
-    width: 450px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 /*слайдер*/
@@ -174,21 +114,6 @@ section {
   background-color: rgb(255, 255, 255);
 }
 
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  .slide img {
-    width: 830px;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .slide img {
-    width: 500px;
-    height: auto;
-  }
-}
-
 /*доверие компании*/
 
 .container {
@@ -214,34 +139,6 @@ section {
   margin-left: 20px;
   /* Добавляем отступ между элементами */
   margin-right: 20px;
-}
-
-/* Медиа-запросы */
-@media screen and (max-width: 767px) {
-  .trust-info {
-    margin-top: 10px;
-    margin-left: 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .trust-item {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    text-align: start;
-    margin-left: 110px;
-    margin-bottom: 20px;
-    /* Добавляем отступ между элементами */
-  }
-
-  .trust-item img {
-    height: 80px;
-    width: 80px;
-  }
 }
 
 /*поиск*/
@@ -359,36 +256,6 @@ button {
   display: flex;
 }
 
-@media screen and (max-width: 1024px) {
-  .news-blocmain {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .news {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .news-blocmain {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 10px;
-  }
-
-  .news p {
-    margin-left: 25px;
-  }
-
-}
-
 /*инфографика*/
 .infographic {
   background-color: #ffffff;
@@ -424,12 +291,6 @@ button {
   flex: 1;
 }
 
-@media screen and (max-width: 767px) {
-  .infographic-image img {
-    height: 410px;
-    margin-right: 48px;
-  }
-}
 
 /*Подвал*/
 .footer {
@@ -552,4 +413,123 @@ button {
   .footer__nav {
     flex: 2 0px;
   }
+}
+@media screen and (max-width: 1024px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 5px 5px 5px 5px;
+
+  }
+
+  section {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    width: 830px;
+    height: auto;
+  }
+
+  .news-blocmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+  section {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    width: 500px;
+    height: auto;
+  }
+
+  .trust-info {
+    margin-top: 10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trust-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    /* Добавляем отступ между элементами */
+  }
+
+  .trust-item img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .news {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-blocmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .news p {
+    margin-left: 25px;
+  }
+  
+  .infographic-image img {
+    height: 410px;
+    margin-right: 48px;
+  }
+  
 }
