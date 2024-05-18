@@ -474,6 +474,24 @@ button {
 }
 
 @media screen and (min-width: 40.375em) {
+  
+  .footer__nav>* {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0px;
+  }
+
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .con-hed {
     flex-direction: column;
     align-items: center;
@@ -509,21 +527,6 @@ button {
     justify-content: center;
     flex-direction: column;
     padding-top: 10px;
-  }
-  .footer__nav>* {
-    flex: 1;
-  }
-
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-
-  .footer__addr {
-    flex: 1 0px;
-  }
-
-  .footer__nav {
-    flex: 2 0px;
   }
 }
 
