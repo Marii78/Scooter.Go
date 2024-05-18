@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/Логотип.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="con-hed">
+      <div class="logo"><a href="/index.html"><img src="img/Логотип.png" alt="logo" height="80"></a></div>
+      <nav>
+        <a href="#">Акции</a>
+        <a href="Rentplace/rentplace.html">Точки проката</a>
+        <a href="Booking/booking.html">Бронирование</a>
+        <a href="Registration/register.html">Регистрация</a>
+        <a href="Login/login.html">Личный кабинет</a>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
+    <div class="maiim">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="img/slaider/1.jpg" alt="image"></div>
+          <div class="slide"><img src="img/slaider/2.jpg" alt="image"></div>
+          <div class="slide"><img src="img/slaider/3.jpg" alt="image"></div>
+          <div class="slide"><img src="img/slaider/4.jpg" alt="image"></div>
+        </div>
+        <div class="slider-indicators"></div>
+      </div>
+      <section>
+        <div class="container">
+          <h2 class="section-title">Доверие компании</h2>
+          <div class="trust-info">
+            <div class="trust-item">
+              <img src="img/icon/gorod.png" height="80" alt="gorod">
+              <h3>Работаем в 100<br>городах России</h3>
+              <p>Развиваем микромобильность по <br>всей России и помогаем городам с инфраструктурой</p>
+            </div>
+            <div class="trust-item">
+              <img src="img/icon/smail.png" height="80" alt="gorod">
+              <h3>3 000 000 клиентов<br> оценили</h3>
+              <p>Это действительно удобно. <br>Обязательно попробуйте!</p>
+            </div>
+            <div class="trust-item">
+              <img src="img/icon/samoc.png" height="80" alt="gorod">
+              <h3>80000 самокатов <br>по всей стране</h3>
+              <p>У нас самый большой парк <br>самокатов в России.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="search-section">
+        <h2>Поиск электросамоката</h2>
+        <form id="search-form">
+          <label for="scooter-class">Класс электросамоката:</label>
+          <select id="scooter-class" required>
+            <option value="">Класс электросамоката</option>
+            <option value="adult-standard">Взрослый стандартный</option>
+            <option value="adult-speed">Взрослый скоростной</option>
+            <option value="child">Детский</option>
+          </select>
+          <label for="brand">Марка:</label>
+          <input type="text" id="brand" required>
+          <label for="model">Модель:</label>
+          <input type="text" id="model" required>
+          <button type="submit" class="btn">Найти</button>
+        </form>
+      </section>
+      <section class="news">
+        <h2>Новости</h2>
+        <div class="news-blocmain">
+          <div class="news-block1">
+            <div class="news-bloc">
+              <h3>Предупреждение МЧС</h3> <br>
+              <img src="img/news/news1.bmp" height="250" alt="Новость 1">
+            </div>
+            <p>МЧС: езда на электросамокатах в дождь запрещена. <br>
+              Езда на электросамокатах в дождь опасна для жизни и находится под запретом. Об этом говорится в памятке,
+              распространенной МЧС России. <br>
+            </p>
+            <button class="btn">Подробнее</button>
+          </div>
+          <div class="news-block1">
+            <div class="news-bloc">
+              <h3>«Яндекс» представит собственный электросамокат</h3>
+              <img src="img/news/news3.bmp" height="250" alt="Новость 1">
+            </div>
+            <p>Разработкой занималась компания Wind, которую «Яндекс» купил прошлой осенью. Сейчас устройство
+              тестируется в Израиле, производить его будут на китайских заводах</p>
+            <div class="bloc-btn">
+              <button class="btn">Подробнее</button>
+            </div>
+          </div>
+          <div class="news-block1">
+            <div class="news-bloc">
+              <h3>В России ограничили скорость езды на электросамокатах</h3>
+              <img src="img/news/news4.bmp" height="250" alt="Новость 1">
+            </div>
+            <p>Правительство: скорость езды на электросамокатах ограничена до 25 км/ч
+              Электросамокаты и гироскутеры получили особый статус — средства индивидуальной мобильности. Теперь
+              перемещаться на них можно со скоростью не более 25 км/ч.</p>
+            <button class="btn">Подробнее</button>
+          </div>
+        </div>
+      </section>
+      <section class="infographic">
+        <h2>Правила</h2>
+        <div class="infographic-content">
+          <div class="infographic-image">
+            <img src="img/inf.gif" alt="Инфографика" height="500">
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__addr">
+      <img class="footer__logo" src="img/Логотип.png" alt="logo" height="80">
+      <h4>Контакты</h4>
+      <p>8 (800) 111-11-11</p>
+    </div>
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h4 class="nav__title">Меню</h4>
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="Booking/booking.html">Бронирование</a>
+          </li>
+          <li>
+            <a href="Login/login.html">Личный кабинет</a>
+          </li>
+          <li>
+            <a href="Rentplace/rentplace.html">Точки проката</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item nav__item--extra">
+        <h4 class="nav__title">Документы</h4>
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="#">Пользовательское соглашение</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h4 class="nav__title">Мы тут</h4>
+        <ul class="nav__ul">
+          <li>
+            <a href="#"><img src="img/icon/вк.png" alt="vk" height="20"> ВКонтакте</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/телега.png" alt="tg" height="20"> Телеграмм</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/инст.png" alt="inst" height="20"> Инстаграм</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="legal">
+      <p>&copy; Самокат.Go 2023-2024</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

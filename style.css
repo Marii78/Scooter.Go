@@ -1,0 +1,555 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #B9BCFF;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+}
+
+.con-hed {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #978bff;
+  border: 2px solid #978bff;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 1024px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 5px 5px 5px 5px;
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+
+.maiim {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  width: 1100px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 1024px) {
+  section {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*слайдер*/
+.slider {
+  margin: 20px auto;
+  /* Центрирование слайдера по горизонтали */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+  /* Ограничение максимальной ширины слайдера */
+  margin-left: auto;
+  /* Центрирование слайдера по горизонтали */
+  margin-right: auto;
+  /* Центрирование слайдера по горизонтали */
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  /* Изначально скрываем все слайды */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.slide.active {
+  display: block;
+  /* Показываем активный слайд */
+}
+
+.slider-indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-indicator.active {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 1024px) {
+  .slide img {
+    width: 830px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide img {
+    width: 500px;
+    height: auto;
+  }
+}
+
+/*доверие компании*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Добавляем отступы слева и справа для сохранения отступов от боковых границ */
+}
+
+.section-title {
+  margin-bottom: 10px;
+}
+
+.trust-info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.trust-item {
+  width: 33.33%;
+  text-align: start;
+  margin-left: 20px;
+  /* Добавляем отступ между элементами */
+  margin-right: 20px;
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 767px) {
+  .trust-info {
+    margin-top: 10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trust-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    /* Добавляем отступ между элементами */
+  }
+
+  .trust-item img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+/*поиск*/
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Центрирование по горизонтали */
+  justify-content: center;
+  /* Центрирование по вертикали */
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select {
+  background-color: #fff;
+  width: 200px;
+  margin: 5px auto;
+  /* Центрирование полей ввода */
+  border: solid 2px #8270F0;
+  border-radius: 5px;
+}
+
+select {
+  width: 215px;
+}
+
+
+input,
+select,
+button {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/*новости*/
+.news {
+  padding: 0px 30px 30px 30px;
+}
+
+.news p {
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.news img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #8270F0;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+.btn:hover {
+  background-color: #6846C6;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*bloci*/
+.news-blocmain {
+  display: flex;
+  justify-content: center;
+}
+
+.news-block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  border: 3px solid #8270F0;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.news-block1 p {
+  margin-left: 20px;
+}
+
+.bloc-btn {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .news-blocmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-blocmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .news p {
+    margin-left: 25px;
+  }
+
+}
+
+/*инфографика*/
+.infographic {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.infographic h2 {
+  text-align: center;
+}
+
+.infographic-content {
+  width: 900px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infographic-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.infographic-image img {
+  border-radius: 10px;
+}
+
+.infographic-description {
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .infographic-image img {
+    height: 410px;
+    margin-right: 48px;
+  }
+}
+
+/*Подвал*/
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 60px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer>* {
+  flex: 1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav>* {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav>* {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0px;
+  }
+
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
