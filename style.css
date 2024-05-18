@@ -392,69 +392,6 @@ button {
 }
 
 @media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 40.375em) {
-  .footer__nav>* {
-    flex: 1;
-  }
-
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-
-  .footer__addr {
-    flex: 1 0px;
-  }
-
-  .footer__nav {
-    flex: 2 0px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav a {
-    margin: 5px 5px 5px 5px;
-
-  }
-
-  section {
-    width: 800px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .slide img {
-    width: 830px;
-    height: auto;
-  }
-
-  .news-blocmain {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 10px;
-  }
-  
-}
-
-@media screen and (max-width: 360px) {
   .con-hed {
     flex-direction: column;
     align-items: center;
@@ -531,5 +468,70 @@ button {
     height: 410px;
     margin-right: 48px;
   }
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 5px 5px 5px 5px;
+
+  }
+
+  section {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    width: 830px;
+    height: auto;
+  }
+
+  .news-blocmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .footer__nav>* {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0px;
+  }
+
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  
+  
+}
+
+@media screen and (max-width: 360px) {
+  
   
 }
