@@ -45,42 +45,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav a {
-    margin: 5px 5px 5px 5px;
-
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
-}
 
 .maiim{
   display: flex;
@@ -99,28 +63,6 @@ section{
 
 h1{
   text-align: center;
-}
-
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  section{
-    width: 800px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  section{
-    width: 450px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 /*Подвал*/
@@ -350,8 +292,33 @@ input{
   margin-top: 40px;
 }
 
+/* Медиа-запросы */
 @media screen and (max-width: 1024px) {
-  .cardBlock{
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 5px 5px 5px 5px;
+
+  }
+
+	section{
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.cardBlock{
     margin: 10px;
   }
   .modal {
@@ -359,15 +326,42 @@ input{
     width: 500px;
     height: auto;
   }
+	
 }
+
 @media screen and (max-width: 767px) {
-  .cards-container{
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+	section{
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+	.cards-container{
     display: flex;
     flex-direction: column;
   }
+	
   .modal {
     left: 50px;
     width: 400px;
     height: auto;
   }
+
 }
