@@ -45,43 +45,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav a {
-    margin: 5px 5px 5px 5px;
-
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
-}
-
 .maiim{
   display: flex;
   justify-content: center;
@@ -97,27 +60,6 @@ section{
   margin: 30px;
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 1024px) {
-  section{
-    width: 800px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  section{
-    width: 450px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 /*регистрация*/
@@ -208,11 +150,6 @@ button:hover{
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  form{
-    width: 400px;
-  }
-}
 
 /*Подвал*/
 .footer {
@@ -336,3 +273,61 @@ button:hover{
     flex: 2 0px;
   }
 }
+
+/* Медиа-запросы */
+@media screen and (max-width: 1024px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 5px 5px 5px 5px;
+  }
+	
+  section{
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+	section{
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+	form{
+    width: 400px;
+  }
+}
+
