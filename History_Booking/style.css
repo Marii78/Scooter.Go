@@ -45,43 +45,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Медиа-запросы */
-@media screen and (max-width: 1024px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav a {
-    margin: 5px 5px 5px 5px;
-
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .con-hed {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
-}
-
 .maiim{
   display: flex;
   justify-content: center;
@@ -196,29 +159,6 @@ section{
   color: #2f2f2f;
 }
 
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
-    flex: 1;
-  }
-  
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-  
-  .footer__addr {
-    flex: 1 0px;
-  }
-  
-  .footer__nav {
-    flex: 2 0px;
-  }
-}
 /*история*/
 
 .booking-history {
@@ -292,4 +232,58 @@ section{
 
 .rental-info img{
   width: 200px;
+}
+
+
+/* Медиа-запросы */
+@media screen and (max-width: 1024px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin: 5px 5px 5px 5px;
+
+  }
+	section {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .con-hed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+	section {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
