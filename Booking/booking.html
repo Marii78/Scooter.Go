@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Бронирование</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/Логотип.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="con-hed">
+      <div class="logo"><a href="../index.html"><img src="img/Логотип.png" alt="logo" height="80"></a></div>
+      <nav>
+        <a href="#">Акции</a>
+        <a href="../Rentplace/rentplace.html">Точки проката</a>
+        <a href="../Booking/booking.html">Бронирование</a>
+        <a href="../Login/login.html">Личный кабинет</a>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
+    <div class="maiim">
+      <section>
+        <h1>Бронирование</h1>
+        <h2>Данные об электросамокатах</h2>
+        <form id="bookingForm" class="bookingForm">
+          <div>
+            <label for="scooterId">Идентификатор электросамоката:</label>
+            <input type="text" id="scooterId" name="scooterId">
+          </div>
+          <div>
+            <label for="scooterBrand">Марка электросамоката:</label>
+            <input type="text" id="scooterBrand" name="scooterBrand">
+          </div>
+          <div>
+            <label for="scooterName">Название электросамоката:</label>
+            <input type="text" id="scooterName" name="scooterName">
+          </div>
+          <div>
+            <label for="bookingTime">Время/Дата бронирования:</label>
+            <input type="datetime-local" id="bookingTime" name="bookingTime">
+          </div>
+          <div>
+            <label for="returnTime">Время/Дата возврата:</label>
+            <input type="datetime-local" id="returnTime" name="returnTime">
+          </div>
+          <div>
+            <label for="bookingCost">Стоимость бронирования за день/час:</label>
+            <input type="text" id="bookingCost" name="bookingCost">
+          </div>
+          <div>
+            <label for="rentalLocation">Точка проката:</label>
+            <input type="text" id="rentalLocation" name="rentalLocation">
+          </div>
+        </form>
+
+        <h2>Данные о клиенте</h2>
+        <form id="customerForm" class="customerForm">
+          <div class="field">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Антон">
+          </div>
+          <p id="errorFirstName"></p><br>
+          <div class="field">
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Антонов">
+          </div>
+          <p id="errorLastName"></p><br>
+          <div class="field">
+            <label for="middleName">Отчество:</label>
+            <input type="text" id="middleName" name="middleName" placeholder="Антонович">
+          </div>
+          <p id="errorMiddleName"></p><br>
+          <div class="field">
+            <label for="tele">Телефон:</label>
+            <input type="text" id="tele" name="tele" placeholder="+7 (___) ___-____">
+          </div>
+          <p id="errorTele"></p><br>
+          <p class="p">Паспортные данные</p> <br> <br>
+          <div class="field">
+            <label for="seria">Серия:</label>
+            <input type="text" id="seria" name="seria">
+          </div>
+          <p id="errorSeria"></p><br>
+          <div class="field">
+            <label for="nomer">Номер:</label>
+            <input type="text" id="nomer" name="nomer">
+          </div>
+          <p id="errorNomer"></p><br>
+          <div class="field">
+            <label id="creditCard">Банковская карта:</label>
+            <input type="text" id="card-number" name="creditCard" maxlength="19">
+          </div><br>
+          <h3>Финальная стоимость: <span id="finalCost"></span></h3>
+          <button id="registerButton" type="submit">Забронировать</button>
+        </form>
+      </section>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__addr">
+      <img class="footer__logo" src="img/Логотип.png" alt="logo" height="80">
+      <h4>Контакты</h4>
+      <p>8 (800) 111-11-11</p>
+    </div>
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h4 class="nav__title">Меню</h4>
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="../Booking/booking.html">Бронирование</a>
+          </li>
+          <li>
+            <a href="../Login/login.html">Личный кабинет</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item nav__item--extra">
+        <h4 class="nav__title">Документы</h4>
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="#">Пользовательское соглашение</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h4 class="nav__title">Мы тут</h4>
+        <ul class="nav__ul">
+          <li>
+            <a href="#"><img src="img/icon/вк.png" alt="vk" height="20"> ВКонтакте</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/телега.png" alt="tg" height="20"> Телеграмм</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/инст.png" alt="inst" height="20"> Инстаграм</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="legal">
+      <p>&copy; Самокат.Go 2023-2024</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
