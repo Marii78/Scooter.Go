@@ -236,7 +236,7 @@ h1{
     margin: 5px 0;
   }
 	section{
-    width: 340px;
+    width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
